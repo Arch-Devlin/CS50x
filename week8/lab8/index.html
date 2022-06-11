@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+
+        <script src="web.js"></script>
+
+
+    </head>
+    <body>
+
+        <div class="jumbotron">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+
+                <!-- TODO: Add multiple choice question here -->
+                <h3>What is 7 x 3?</h3>
+                <button onclick = "multicheck(event)" type = "submit">18</button>
+                <button onclick = "multicheck(event)" type = "submit">20</button>
+                <button onclick = "multicheck(event)" type = "submit">21</button>
+                <button onclick = "multicheck(event)" type = "submit">25</button>
+                
+                <p id = "feedback1"></p>
+
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+
+                <!-- TODO: Add free response question here -->
+                <h3>What is the capital city of England?</h3>
+                
+                <input name="A2-1" type="text">
+                <button name="A2-2" type="submit" onclick = "freecheck(event)">Answer!</button>
+                
+                <p id = feedback2></p>
+                
+            </div>
+
+        </div>
+    </body>
+</html>
